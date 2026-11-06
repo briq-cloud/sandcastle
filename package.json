@@ -1,0 +1,44 @@
+{
+  "name": "@briq-cloud/sandcastle",
+  "version": "0.1.0",
+  "description": "Run Sandcastle agents in briq sandboxes",
+  "keywords": ["briq", "sandcastle", "sandbox", "agents"],
+  "homepage": "https://github.com/briq-cloud/sandcastle#readme",
+  "repository": { "type": "git", "url": "git+https://github.com/briq-cloud/sandcastle.git" },
+  "bugs": { "url": "https://github.com/briq-cloud/sandcastle/issues" },
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "README.md", "LICENSE"],
+  "packageManager": "pnpm@9.7.0",
+  "engines": {
+    "node": ">=22.6"
+  },
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "biome check .",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@briq-cloud/sdk": "^0.1.1"
+  },
+  "peerDependencies": {
+    "@ai-hero/sandcastle": ">=0.14.0"
+  },
+  "devDependencies": {
+    "@ai-hero/sandcastle": "0.14.0",
+    "@biomejs/biome": "^1.9.4",
+    "@types/node": "^22.18.0",
+    "typescript": "^5.6.3",
+    "vitest": "3.2.4"
+  }
+}
