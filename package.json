@@ -1,11 +1,21 @@
 {
   "name": "@briq-cloud/sandcastle",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Run Sandcastle agents in briq sandboxes",
-  "keywords": ["briq", "sandcastle", "sandbox", "agents"],
+  "keywords": [
+    "briq",
+    "sandcastle",
+    "sandbox",
+    "agents"
+  ],
   "homepage": "https://github.com/briq-cloud/sandcastle#readme",
-  "repository": { "type": "git", "url": "git+https://github.com/briq-cloud/sandcastle.git" },
-  "bugs": { "url": "https://github.com/briq-cloud/sandcastle/issues" },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/briq-cloud/sandcastle.git"
+  },
+  "bugs": {
+    "url": "https://github.com/briq-cloud/sandcastle/issues"
+  },
   "license": "MIT",
   "type": "module",
   "sideEffects": false,
@@ -17,7 +27,11 @@
       "default": "./dist/index.js"
     }
   },
-  "files": ["dist", "README.md", "LICENSE"],
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "packageManager": "pnpm@9.7.0",
   "engines": {
     "node": ">=22.6"
