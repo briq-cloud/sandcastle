@@ -53,6 +53,8 @@ vi.mock('@briq-cloud/sdk', async (importOriginal) => {
           child.stderr.on('data', (d: Buffer) =>
             input.onChunk({ stream: 'stderr', text: d.toString() }),
           );
+          // A command that exits without reading its input closes the pipe: not an error here.
+          child.stdin.on('error', () => undefined);
           child.stdin.end(input.stdin ?? '');
           const exitCode = await new Promise<number | null>((resolve) =>
             child.on('close', (code) => resolve(code)),
