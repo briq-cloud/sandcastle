@@ -1,6 +1,6 @@
 {
   "name": "@briq-cloud/sandcastle",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Run Sandcastle agents in briq sandboxes",
   "keywords": ["briq", "sandcastle", "sandbox", "agents"],
   "homepage": "https://github.com/briq-cloud/sandcastle#readme",
@@ -34,7 +34,7 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "@briq-cloud/sdk": "^0.1.1"
+    "@briq-cloud/sdk": "^0.2.0"
   },
   "peerDependencies": {
     "@ai-hero/sandcastle": ">=0.14.0"
